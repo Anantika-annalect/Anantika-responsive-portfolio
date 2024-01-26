@@ -6,6 +6,15 @@
     <title>My Resume</title>
     <style>
        @media screen and (max-width: 690px) {
+        .container-mob{
+            width: 360px !important;
+            height: auto !important;
+            max-width: 360px !important;
+        }
+        .header-mob{
+            width: 500px !important;
+            max-width: 500px !important;
+        }
      .pp-mob {
         padding: 0px 0px 0px 30px !important;
         display: block !important;
@@ -36,7 +45,21 @@
         .w500{
             width: 500px !important;
         }
+        .line-divider-mob{
+            width: 350px !important;
+            border: 1px dotted black;
+        }
+        .ftr-mob{
+            width: 400px !important;
+        }
 }
+*{
+    margin: 0;
+}
+/* .container{
+    width: 100vw;
+    height: 100vh;
+} */
         .highlight{
             background-color: rgb(68, 66, 66);
             border-top-right-radius: 345px;
@@ -67,7 +90,7 @@
             font-weight: bold;
         }
         .pp{
-            /* width: 50%; */
+           /* width: 30%; */
             padding: 0px 0px 0px 600px;
             display: flex;
             flex-direction: row;
@@ -91,10 +114,15 @@
         .purple{
             color: rgba(137, 43, 226, 0.797);
         }
+        .ftr{
+            width: 1406px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
-    <div class="flx-n header highlight">
+    <div class="container-mob container">
+    <div class="header-mob flx-n header highlight">
         <div class="content-mob content">
             <ul class="fl-r pd10-mob w200 w400">
             <li class="list-style-mob list-style"><a class="pd10-mob" href="#About" style="text-decoration: none; color: rgb(248, 97, 60);">About</a></li>
@@ -104,8 +132,10 @@
             <li class="list-style-mob list-style"><a class="pd10-mob" href="#Awards" style="text-decoration: none; color: rgb(76, 207, 240)">Awards</a></li>
         </ul>
         </div>
-        <div class="pp-mob pp"><a href="About_Me.html" target="_blank"><img class="w500" src="images/profile_picture_round.jpeg" alt="Profile Picture" width="300" height="auto" style="max-width: 300px;"></a></div>
+        <div class="pp-mob pp"><a href="About_Me.html" target="_blank"><img class="pp-mob w500" src="images/profile_picture_round.jpeg" alt="Profile Picture" width="300" height="auto" style="max-width: 300px;"></a>
+        </div>
     </div>
+    <div class="container-mob copy pd20">
     <h1 id="About" style="color: rgb(248, 97, 60)">Summary</h1>
     <p>I am self-motivated and hard-working individual with proficiency in HTML, CSS and JavaScript, as well as a strong ability to communicate and work in a team effectively. I am a highly competent IT professional with a proven track record in designing and developing Emails, Templates and Banners in a SFMC Platform, where we can design and customise all the templates as per clients requirements.</p>
     <p>In this new learning journey, I put my 100% effort in all  technical aspects and hands on experience to the projects I handle, as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion in life is using my technical knowledge to benefit the organization I am working with.</p>
@@ -117,12 +147,12 @@
         <p>Later, Worked on building Banners.</p>
         <p><span style="font-weight: bold;">Tools:</span> SFMC, Adobe Photoshop, Sublime Text, Visual Studio</p>
         <p><span style="font-weight: bold">Technologies:</span> HTML, CSS, Ampscript, Javascript(Basic)</p><br/>
-        <div class="line-divider"></div>
+        <div class="line-divider-mob line-divider"></div>
         <h3 class="purple">Hangar Worldwide - Data Engineer, December 2021 to April 2022</h3>
         <p>Worked as a Developer Code for Code Worldwide. My work included, designing and Developing Emails(both Static and Dynamic emails) and other Templatized modules for Emails on SFMC.</p>
         <p><span style="font-weight: bold;">Tools:</span> SFMC, VS Code, Adobe Photoshop</p>
         <p><span style="font-weight: bold">Technologies:</span> HTML, CSS, JavaScript</p><br/>
-        <div class="line-divider"></div>
+        <div class="line-divider-mob line-divider"></div>
         <h3 class="purple">Trantor Solutions Private Limited - Email Developer/ QA Analyst, August 2019 - November 2021</h3>
         <p>I was responsible for conducting requirements gathering and validation as a part of collaboration before the active phase of development. To build stable and maintainable codebases using HTML, CSS, JavaScript. Performing bug fixes and code reviews. Extensive experience in developing HTML and AMP Emails which support cross email clients.</p>
         <p><span style="font-weight: bold;">Tools:</span> Sublime Text, Adobe Photoshop, Figma, Sketch, Gamma, Redwood, Delta, Pixel perfect</p>
@@ -148,10 +178,12 @@
         <a href="About_me.html" target="_blank"  style="text-decoration: none; color: aliceblue;"><div class="w100 pd20"><h4 class="pd20" style="background-color: black; color: aliceblue; border: 1px solid black;">About Me</h4></div></a>
         <a href="Contact.html" target="_blank"  style="text-decoration: none; color: aliceblue;"><div class="w100 pd20"><h4 class="pd20" style="background-color: blue; color: aliceblue; border: 1px solid blue;">Contact</h4></div></a>
      </div>
-     <footer style="background-color: bisque; padding: 40px 0 40px 10px;">
+    </div>
+     <footer class="ftr-mob ftr" style="background-color: bisque; padding: 40px 0 40px 10px;">
         <p>© 2024 Anantika<br/>
         CS1/1604, Supertech Capetown,<br/>
         Noida, UP</p>
       </footer>
+    </div>
 </body>
 </html>
